@@ -7,7 +7,7 @@ A atualização contínua dos modelos de linguagem é um desafio complexo no cam
 ## Solução Proposta
 Visando o problema do "concept drift" em sistemas conversacionais, desenvolvemos uma solução baseada em aprendizado contínuo, com base no paradigma do "Continual Knowledge Learning", presente no artigo.
 ### Diagrama de Blocos
-![Diagrama de Blocos para a Solução Proposta](diagrama_blocos.png)
+!(diagrama2.png)
 
 ### Descrição dos Blocos
 1. **Coleta de Dados**: É crucial obter dados em tempo real, seguido por uma fase de pré-processamento para assegurar que os dados estejam devidamente limpos e formatados.
