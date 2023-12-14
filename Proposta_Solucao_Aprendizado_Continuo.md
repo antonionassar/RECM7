@@ -2,21 +2,21 @@
 # Proposta de Solução de Aprendizado Contínuo em um Sistema Conversacional
 
 ## Introdução
-A atualização contínua dos modelos de linguagem é um desafio significativo no campo da Inteligência Artificial. Este problema é exacerbado pelo 'concept drift', que é a mudança gradual ou repentina dos padrões de dados ao longo do tempo. A incapacidade dos modelos de se adaptarem a essas mudanças pode levar a uma degradação do desempenho e relevância.
+A atualização contínua dos modelos de linguagem é um desafio complexo no campo de Machine Learning e Inteligência Artificial (AI). Este problema é agravado pelo chamado 'Concept Drift', um fenômeno onde o modelo não consegue se manter atualizado, refletindo em uma mudança gradual ou repentina dos padrões de dados ao longo do tempo. A incapacidade dos modelos de se adaptarem a essas mudanças pode afetar o desempenho e relevância, afetando principalmente sistemas conversacionais (como chatbots e assistentes virtuais) onde a falta de atualização pode resultar em respostas imprecisas e irrelevantes.
 
 ## Solução Proposta
+Visando o problema do "concept drift" em sistemas conversacionais, desenvolvemos uma solução baseada em aprendizado contínuo, com base no paradigma do "Continual Knowledge Learning", presente no artigo.
 ### Diagrama de Blocos
 ![Diagrama de Blocos para a Solução Proposta](diagrama_blocos.png)
 
 ### Descrição dos Blocos
-1. **Coleta de Dados**: Recolhimento contínuo de novos dados para treinamento.
-2. **Análise de 'Concept Drift'**: Detecta mudanças nos padrões de dados.
-3. **Atualização de Modelo**: Incorpora novos dados e ajusta o modelo para lidar com o 'concept drift'.
-4. **Monitoramento de Desempenho**: Avalia a eficácia do modelo atualizado.
-5. **Feedback Loop**: Permite ajustes baseados no desempenho do modelo.
+1. **Coleta de Dados**: É crucial obter dados em tempo real, seguido por uma fase de pré-processamento para assegurar que os dados estejam devidamente limpos e formatados.
+2. **Detecção de Concept Drift**: A qualidade das respostas do sistema é monitorada continuamente, e algoritmos são empregados para identificar alterações nos dados. Quando mudanças são detectadas, alertas são emitidos para indicar a necessidade de atualizações.
+3. **Atualização do Modelo via CKL**: Utiliza-se técnicas de aprendizado contínuo para atualizar o modelo. O CKL tem como objetivo atualizar constantemente o conhecimento dos modelos de linguagem, mantendo o conhecimento que permanece relevante ao longo do tempo, substituindo informações obsoletas e incorporando novos conhecimentos. O CKL divide o conhecimento do mundo em três categorias: conhecimento constante, conhecimento obsoleto e novo conhecimento.
+4. **Sistema Atualizado**: Com a implementação do modelo atualizado, testes comparativos são conduzidos para medir sua eficácia. O sistema também inclui mecanismos de feedback dos usuários para colher impressões sobre a qualidade das interações.
 
 ## Conclusão
-A implementação desta solução requer um investimento significativo em termos de recursos de processamento e desenvolvimento. Contudo, é vital para garantir que os sistemas conversacionais permaneçam eficientes e relevantes em um mundo em constante mudança.
+A adoção de um modelo de aprendizado contínuo é fundamental para garantir a atualidade e efetividade de sistemas conversacionais. Esta abordagem permite que os modelos de linguagem atualizem e renovem seu conhecimento interno, mantendo-se alinhados com as constantes mudanças do mundo real. Com isso, é possível fornecer respostas não apenas precisas, mas também contextualmente relevantes. Embora o desafio de implementar um sistema seja considerável, os benefícios em termos de acurácia e satisfação do usuário são muito valiosos, respectivamente.
 
-## Referências Bibliográficas
-1. Jang, J., Ye, S., Yang, S., et al. "Towards Continual Knowledge Learning of Language Models." *arXiv:2110.03215v4* (2022).
+## Referência Bibliográfica
+- JAYARATNE, Dinithi et al. Continuous detection of concept drift in industrial cyber-physical systems using closed loop incremental machine learning. Discover Artificial Intelligence, v. 1, 2021.
